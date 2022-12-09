@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style >
+	.card1 {
+	 position: relative;
+	 overflow: hidden;
+	 text-overflow: clip !important;
+	 height: 400px;
+	 width: 300px;
+	 padding: 8px;
+	 background: white;
+	 border-radius: 16px;
+	  transition: 0.2s ease all;
+}
+ .card1 button {
+	 padding: 16px 8px;
+	 background-color: #ccc;
+	 font-weight: bold;
+	 color: white;
+	 border: 0;
+	 font-size: 18px;
+	 margin-right: 4px;
+}
+ .card1 button.buy {
+	 padding: 16px 32px;
+	 background-color: #00ab44;
+}
+ .card1 button.buy:active {
+	 background-color: #007b45;
+}
+ .card1 button.link {
+	 transform: translateX(-300px) !important;
+	  transition: 0.2s ease all;
+}
+ .card1 button:active {
+	 background-color: #aaa;
+}
+ .card1 .card1-content {
+	 position: relative;
+}
+ .card1 .card1-content .hide {
+ 	 transition: 0.2s ease all;
+	 opacity: 0;
+}
+ .card1 .card1-img {
+ 	 transition: 0.2s ease all;
+	 height: 65%;
+	 margin: -8px;
+	 background-size: 200%;
+	 background-position: center;
+	 background-image: url("https://images.unsplash.com/photo-1542228261-89eed3d81d98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+ .card1:hover .card1-img {
+	 height: 30%;
+	 background-size: 280%;
+}
+ .card1:hover .card1-content .hide {
+	 opacity: 1;
+}
+ .card1:hover .link {
+	 transform: translateX(0) !important;
+}
+ 
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="card1">
+    <div class="card1-img">
+    </div>
+    <div class="card1-content">
+      <h1>JDM Tailight sticker</h1>
+      <h2>$99,00</h2> 
+      
+      <p class="hide">Decorate and personalize laptops, windows, and more. Removable, kiss-cut vinyl stickers super durable and water resistant 1/8 inch (3.2mm) white border around each design matte.</p>
+      <button class=" buy">Buy</button><button class=" link">Link</button>
+      
+
+    </div>
+  </div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home page</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap4.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+	.menu{
+		font-size: 3rem;
+    text-align: center;
+    text-decoration: underline overline;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+	}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.logo a:hover{
+  color:#fac564;
+}
+
+
+.main-nav {
+  margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+
+}
+
+.main-nav a {
+  color: white;
+  font-size: .99em;
+}
+
+.main-nav a:hover {
+  color: #fac564;
+  text-decoration: none;
+}
+
+
+
+.header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  /*border: 1px solid #a2a2a2;*/
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  
+      }
+      
+
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+
+/*transiction*/
+.card1 {
+   position: relative;
+   overflow: hidden;
+   text-overflow: clip !important;
+   height: 400px;
+   width: 300px;
+   padding: 8px;
+   background: white;
+   border-radius: 16px;
+    transition: 0.2s ease all;
+}
+ .card1 button {
+   padding: 16px 8px;
+   background-color: #ccc;
+   font-weight: bold;
+   color: white;
+   border: 0;
+   font-size: 18px;
+   margin-right: 4px;
+}
+ .card1 button.buy {
+   padding: 16px 32px;
+   background-color: #00ab44;
+}
+ .card1 button.buy:active {
+   background-color: #007b45;
+}
+ .card1 button.link {
+   transform: translateX(-300px) !important;
+    transition: 0.2s ease all;
+}
+ .card1 button:active {
+   background-color: #aaa;
+}
+ .card1 .card1-content {
+   position: relative;
+}
+ .card1 .card1-content .hide {
+   transition: 0.2s ease all;
+   opacity: 0;
+}
+ .card1 .card1-img {
+   transition: 0.2s ease all;
+   height: 65%;
+   margin: -8px;
+   background-size: 200%;
+   background-position: center;
+   background-image: url("img/card-1.jpg");
+}
+ .card1:hover .card1-img {
+   height: 30%;
+   background-size: 280%;
+}
+ .card1:hover .card1-content .hide {
+   opacity: 1;
+}
+ .card1:hover .link {
+   transform: translateX(0) !important;
+}
+ 
+</style>
+
+
+</head>
+<body style="background-image: url('');background-repeat: no-repeat;background-size:cover ;">
+
+
+
+<section style="background-color: black;">
+  
+    <header class="header">
+    <h1 class="logo"><a href="">spizy<br>corner</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </header> 
+
+</section>
+
+
+
+	<header>
+		
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <video src="file:///storage/emulated/0/inshot/InShot_20221119_202214401.mp4" loop muted autoplay>
+    </video>
+    </div>
+    <div class="carousel-ite">
+      <img class="d-block w-100" src="img/slider.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-ite">
+      <img class="d-block w-100" src="img/slider.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	</header>
+	<br>
+	<p class="menu">MENU</p>
+
+<div class="container">
+<div class="row">
+
+  <!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top  " src="img/card-1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">VEG PIZZA</h5>
+    <p class="card-text">Veggies is one of the most fun and easy dinners to make at home with just a few key tips you can create a restaurant-quality crust, and treat yourself to the best homemade pizza that’s completely customizable to your taste.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
+
+<div class="card1">
+    <div class="card1-img">
+    </div>
+    <div class="card1-content">
+      <h1>VEG PIZZA</h1>
+      <h2>$99,00</h2> 
+      
+      <p class="hide">Veggies is one of the most fun and easy dinners to make at home with just a few key tips you can create a restaurant-quality crust, and treat yourself to the best homemade pizza that’s completely customizable to your taste.</p>
+      <button class=" buy">Buy</button><button class=" link">Link</button>
+      
+
+    </div>
+
+ 
+
+</div>
+
+  <div class="col-6 col-md-4"><div class="card" style="width: 18rem;"">
+  <img class="card-img-top" src="img/card-2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">NON-VEG PIZZA</h5>
+    <p class="card-text">Choosing linear meats like chicken can enhance the taste of pizza considerably. You can also top you pizza with barbecued chicken which provides a smoky and spicy flavour to the pizza. </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>	
+
+
+  <div class="col-6 col-md-4"><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/card-3.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">PIZZA MANIA</h5>
+    <p class="card-text">As the name suggests, the pizza mania will allow you to go giddy and gaga over all the pizza options that are present in front of you.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+<br>	
+<div class="row">
+
+  <div class="col-6 col-md-4"><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/card-7.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">BURGER PIZZA</h5>
+    <p class="card-text"> It is the perfect fusion of two of the most loved items, burger and pizza.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+  <div class="col-6 col-md-4"><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/card-5.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">BEVERAGES</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>	
+
+
+  <div class="col-6 col-md-4"><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/card-8.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">CHOICE OF TOPPINGS</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+	
+
+</div>
+
+
+
+ 
+</body>
+
+
+
+
+
+
+
+</body>
+</html>
